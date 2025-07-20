@@ -1,4 +1,6 @@
 from django.urls import path
 from . import views
 
-urlpatterns = [path("hello/", views.hello_world), ]
+urlpatterns = [path("hello/", views.hello_world),
+               path("<day>/",views.weekdays),
+               ]
