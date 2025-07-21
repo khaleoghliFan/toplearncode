@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+</head>
+<body>
+        <h1>home page</h1>
+        {%for i in posts%}
+            <h3>author is: {{i.author}}</h3>
+           {% if i.author == "Ali Rezaei" %}
+                <h5>you are admin of this site </h5>
+            {% endif %}
+        {% endfor %}
+
+</body>
+</html>
