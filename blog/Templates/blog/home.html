@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+{% extends 'blog/index.html' %}
+{% block header %}
     <title>home</title>
-</head>
-<body>
+{%endblock header %}
+
+{%block content %}
         <h1>home page</h1>
         {%for i in posts%}
             <h3>author is: {{i.author}}</h3>
@@ -12,6 +11,5 @@
                 <h5>you are admin of this site </h5>
             {% endif %}
         {% endfor %}
+{% endblock content %}
 
-</body>
-</html>
